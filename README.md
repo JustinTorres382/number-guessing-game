@@ -7,7 +7,7 @@ The program generates a random number between 1 and 100 and the user needs to gu
 ## Functions
 User Input
 ```typescript
-function UserInput {
+function UserInput() {
   return {
     </input>
   }
@@ -16,11 +16,20 @@ function UserInput {
 
 Submit Button
 ```typescript
-function SubmitButton {
+function SubmitButton() {
   return {
-    <button onclick="">
+    <button onclick={generateRandomNumber}>
       Submit
     </button>
   }
+}
+```
+
+Generate Number
+```typescript
+function generateRandomNumber() {
+  return (
+    Math.floor(Math.random() * 101);
+  );
 }
 ```
