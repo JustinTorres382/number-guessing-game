@@ -27,7 +27,7 @@ function SubmitButton() {
 
 Generate Number
 ```typescript
-function generateRandomNumber() {
+function GenerateRandomNumber() {
   return (
     Math.floor(Math.random() * 101);
   );
